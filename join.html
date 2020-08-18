@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src= "script/script.js"></script>
+</head>
+<body>
+
+    <div id="wrap">
+
+        <h2>회원가입</h2>
+
+    <form id= "joinFrm">
+
+        <main id= "joinInfo">
+
+            <div id= "memName">
+                <input type="text" placeholder= "이름" maxlength= "30" id= "uName" name= "uName">
+            </div>
+            <div id= "memId">
+                <input type="text" placeholder= "아이디" maxlength= "20" id= "uId" name= "uId">
+            </div>
+            <div id= "memPw">
+                <input type="password" placeholder= "비밀번호" maxlength= "20" id= "uPw" name= "uPw">
+            </div>
+            <div id= "memPw_Re">
+                <input type="password" placeholder= "비밀번호 확인" maxlength= "20" id= "uPw_Re">
+            </div>
+            <div id= "memEmail">
+                <input type="text" placeholder= "이메일" maxlength= "50" id= "uEmail">
+            </div>
+            <div id= "memBirth">
+                <select id= "birthYear" onchange= "fnReset()"></select>
+                <select id="birthMonth" onclick= "fnDelMonthOpt()" onchange="fnEndDate()"></select>
+                <select id="birthDate" onclick= "fnDelDateOpt()"></select>
+            </div>
+            <div id= "memGender">
+                <input type="radio" name= "gender"> <span>남</span>
+                <input type="radio" name= "gender" checked> <span>여</span>
+            </div>
+            <div id= "phoneNo">
+                <input type="text" placeholder= "휴대폰번호" maxlength= "15">
+                <button type= "button">인증</button>
+            </div>
+            <div id= "smsVerifyCode">
+                <input type="text" placeholder= "SMS 인증번호" maxlength= "6">
+                <button type="button">확인</button>
+            </div>
+
+        </main> <!--main#joinInfo-->
+
+    </form>
+
+        <div id= "memberTerms">
+
+            <p>이용약관</p>
+            <iframe src="license.html"></iframe>
+
+        </div> <!--div#memberTerms-->
+
+        <div id="confirm14">
+                <input type="checkbox" name= "confirm14ChkBox" id= "confirm14ChkBox"> <span>14세 이상입니다. (필수)</span>
+                <br>
+                <p>
+                    * 회원가입에 필요한 최소한의 정보만 입력 받음으로써 고객님의 개인정보 수집을 최소화하고 <br>
+                    &nbsp;&nbsp;편리한 회원가입을 제공합니다.
+                </p>
+            </div> <!--div#confirm14-->
+
+        <div id="licenseAgree">
+
+               <div id= "wholeAgree">
+                   <input type="checkbox" name= "wholeAgreeChkBox" id= "wholeAgreeChkBox" onclick= "fnWholeChk()"> <span>전체동의</span>
+               </div> <!--div#wholeAgree-->
+
+               <div id= "eachAgree">
+                   <table>
+                       <tr>
+                           <td>
+                               <input type="checkbox" id= "chkBox_01" onclick= "fnReverseChk()" class= "eachChk">
+                               <span>이용약관</span>
+                               <button type= "button">내용보기</button>
+                           </td>
+                           <td>
+                               <input type="checkbox" id= "chkBox_02" onclick= "fnReverseChk()" class= "eachChk">
+                               <span>개인정보 수집 및 이용안내</span>
+                               <button type= "button">내용보기</button>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                               <input type="checkbox" id= "chkBox_03" onclick= "fnReverseChk()" class= "eachChk">
+                               <span>개인정보 제 3자 제공</span>
+                               <button type= "button">내용보기</button>
+                           </td>
+
+                           <td>
+                               <input type="checkbox" id= "chkBox_04" onclick= "fnReverseChk()" class= "eachChk">
+                               <span>개인정보 처리위탁</span>
+                               <button type= "button">내용보기</button>
+                           </td>
+                       </tr>
+                   </table>
+               </div> <!--div#eachAgree 전체동의-->
+
+           </div> <!--div#licenseAgree 개별동의-->
+
+       <div id="sbmBtn">
+           <button type="button" onclick= "fnSbm()">동의하고 가입완료</button>
+       </div> <!--div#sbmBtn-->
+
+    </div> <!--div#wrap-->
+
+</body>
+</html>

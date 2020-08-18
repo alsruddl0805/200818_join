@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/*공통영역 시작*/
+
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*공통영역 종료*/
+
+/*GuideLine 시작*/
+
+div#wrap {
+/*    border: 1px solid #000;*/
+}
+
+/*GuideLine 종료*/
+
+/*div#wrap 시작*/
+
+div#wrap {
+    width: 660px;
+    margin: 10px auto;
+}
+
+div#wrap>h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*div#wrap 종료*/
+
+
+/*main#joinInfo 시작*/
+
+main#joinInfo {
+
+}
+
+main#joinInfo div {
+    border: 1px solid #aaa;
+    padding-left: 20px;
+}
+
+main#joinInfo div:not(:first-child) {
+    border-top: none;
+}
+
+main#joinInfo div input {
+    width: 542px;
+    height: 48px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+}
+
+main#joinInfo div input::placeholder {
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/*select 생년월일 시작*/
+
+#joinInfo div#memBirth {
+    line-height: 48px;
+}
+
+#joinInfo div#memBirth select {
+    width: 100px;
+    font-size: 13px;
+    height: 30px;
+    border: 1px solid #aaa;
+    padding: 0 4px;
+    outline: none;
+
+    -webkit-appearance: none;
+    background-image: url("../images/arrow_01.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#joinInfo div#memBirth select::-ms-expand {
+    display : none;
+}
+
+/*select 생년월일 종료*/
+
+#joinInfo div#memGender {
+    line-height: 46px;
+}
+
+#joinInfo div#memGender span {
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#joinInfo div#memGender input[type=radio] {
+    width: 14px;
+    height: 14px;
+}
+
+#joinInfo div#memGender input:nth-child(3) {
+    margin-left: 10px;
+}
+
+#joinInfo div button {
+    width: 80px;
+    padding: 2px;
+    border: 1px solid #aaa;
+    background-color: #fdf9f9;
+    font-size: 13px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/*main#joinInfo 종료*/
+
+/*div#memberTerms 시작*/
+
+div#memberTerms {
+    margin-bottom: 20px;
+}
+
+div#memberTerms p {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+div#memberTerms iframe {
+    width: 660px;
+    height: 200px;
+    border: 1px solid #aaa;
+}
+
+/*div#memberTerms 종료*/
+
+
+/*div#confirm14 시작*/
+
+div#confirm14 span {
+    color: #c62c2c;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div#confirm14 p {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0 20px;
+}
+
+/*div#confirm14 종료*/
+
+/*div#licenseAgree 시작*/
+
+div#licenseAgree>div {
+    padding-left: 20px;
+    border: 1px solid #aaa;
+}
+
+div#licenseAgree>div:first-child {
+    height: 48px;
+}
+
+div#licenseAgree>div:not(:first-child) {
+    border-top: none;
+}
+
+#licenseAgree div#wholeAgree {
+    font-weight: bold;
+    line-height: 48px;
+}
+
+#licenseAgree div#wholeAgree span {
+    font-size: 14px;
+}
+
+div#licenseAgree div#eachAgree table {
+    padding: 5px;
+}
+
+div#licenseAgree div#eachAgree td {
+    width: 260px;
+    font-size: 13px;
+    padding: 3px;
+}
+
+div#licenseAgree div#eachAgree td button {
+    font-size: 11px;
+    border: 1px solid #aaa;
+    background-color: #fdf9f9;
+    padding: 1px;
+}
+
+/*div#licenseAgree 종료*/
+
+
+/*div#sbmBtn 시작*/
+
+div#sbmBtn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+div#sbmBtn button {
+    width: 250px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+/*div#sbmBtn 종료*/
+
+
+
+main,header,nav,aside,footer,section,address {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
